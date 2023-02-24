@@ -14,27 +14,27 @@ def main() -> None:
             return x
 
     def answer() -> None:
-        ax = float(e1.get())
-        bx = float(e2.get())
+        a = float(e1.get())
+        b = float(e2.get())
         c = float(e3.get())
 
-        if ax == 1:
+        if a == 1:
             eq = "x\N{SUPERSCRIPT TWO} "
-        elif ax == -1:
+        elif a == -1:
             eq = "-x\N{SUPERSCRIPT TWO} "
         else:
-            eq = f"{coefficient(ax)}x\N{SUPERSCRIPT TWO} "
-        if bx == 1:
+            eq = f"{coefficient(a)}x\N{SUPERSCRIPT TWO} "
+        if b == 1:
             eq += "+x "
-        elif bx == -1:
+        elif b == -1:
             eq += "-x "
         else:
-            eq += f"{coefficient(bx):+}x "
+            eq += f"{coefficient(b):+}x "
 
         eq += f"{coefficient(c):+} = 0"
 
-        pans = (-bx + (bx**2 - 4 * ax * c) ** (1 / 2)) / (2 * ax)
-        nans = (-bx - (bx**2 - 4 * ax * c) ** (1 / 2)) / (2 * ax)
+        pans = (-b + (b**2 - 4 * a * c) ** (1 / 2)) / (2 * a)
+        nans = (-b - (b**2 - 4 * a * c) ** (1 / 2)) / (2 * a)
         if pans.imag:
             pans = f"{pans.real:.2f} {pans.imag:+.2f}i"
         else:
@@ -142,14 +142,14 @@ def main() -> None:
     )
     e6.place(x=250, y=210)
 
-    b = Button(
+    button = Button(
         gui,
         text="Solve",
         command=answer,
         bg="#000000",
         fg="#FFFFFF",
     )
-    b.place(x=250, y=250)
+    button.place(x=250, y=250)
     gui.mainloop()
 
 
