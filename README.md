@@ -1,1 +1,4 @@
-# Quadratic-Calculator
+# Quadratic Calculator
+
+
+![demo](./demo.png)
