@@ -57,98 +57,35 @@ def main() -> None:
         fg="#FFFFFF",
     )
     l1.place(x=10, y=10)
-    e1 = Entry(
-        gui,
-        bd=2,
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    e1 = Entry(gui, bd=2, bg="#000000", fg="#FFFFFF")
     e1.place(x=250, y=10)
 
-    l2 = Label(
-        gui,
-        text="Enter the coefficient of x: ",
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    l2 = Label(gui, text="Enter the coefficient of x: ", bg="#000000", fg="#FFFFFF")
     l2.place(x=10, y=50)
-    e2 = Entry(
-        gui,
-        bd=2,
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    e2 = Entry(gui, bd=2, bg="#000000", fg="#FFFFFF")
     e2.place(x=250, y=50)
 
-    l3 = Label(
-        gui,
-        text="Enter the constant: ",
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    l3 = Label(gui, text="Enter the constant: ", bg="#000000", fg="#FFFFFF")
     l3.place(x=10, y=90)
-    e3 = Entry(
-        gui,
-        bd=2,
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    e3 = Entry(gui, bd=2, bg="#000000", fg="#FFFFFF")
     e3.place(x=250, y=90)
 
-    l4 = Label(
-        gui,
-        text="First solution: ",
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    l4 = Label(gui, text="First solution: ", bg="#000000", fg="#FFFFFF")
     l4.place(x=10, y=130)
-    e4 = Label(
-        gui,
-        bd=2,
-        textvariable=ansp,
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    e4 = Label(gui, bd=2, textvariable=ansp, bg="#000000", fg="#FFFFFF")
     e4.place(x=250, y=130)
 
-    l5 = Label(
-        gui,
-        text="Second solution: ",
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    l5 = Label(gui, text="Second solution: ", bg="#000000", fg="#FFFFFF")
     l5.place(x=10, y=170)
-    e5 = Label(
-        gui,
-        bd=2,
-        textvariable=ansn,
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    e5 = Label(gui, bd=2, textvariable=ansn, bg="#000000", fg="#FFFFFF")
     e5.place(x=250, y=170)
 
-    l6 = Label(
-        gui,
-        text="Equation:",
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    l6 = Label(gui, text="Equation:", bg="#000000", fg="#FFFFFF")
     l6.place(x=10, y=210)
-    e6 = Label(
-        gui,
-        textvariable=equation,
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    e6 = Label(gui, textvariable=equation, bg="#000000", fg="#FFFFFF")
     e6.place(x=250, y=210)
 
-    button = Button(
-        gui,
-        text="Solve",
-        command=answer,
-        bg="#000000",
-        fg="#FFFFFF",
-    )
+    button = Button(gui, text="Solve", command=answer, bg="#000000", fg="#FFFFFF")
     button.place(x=250, y=250)
     gui.mainloop()
 
